@@ -6,7 +6,7 @@
 /*   By: stgerard <stgerard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 14:47:48 by stgerard          #+#    #+#             */
-/*   Updated: 2022/12/07 17:52:02 by stgerard         ###   ########.fr       */
+/*   Updated: 2022/12/07 18:19:45 by stgerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	*gestphilo(void *ptr)
 		if (philo->rules.eat_mode == 1)
 		{
 			nb_lunch--;
-			if (nb_lunch <= 0)
+			if (nb_lunch < 0)
 			{
 				philo->rules.dead = 1;
 				break ;
